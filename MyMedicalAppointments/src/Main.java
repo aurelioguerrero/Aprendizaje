@@ -1,7 +1,6 @@
 import static ui.UIMenu.*;
 
 public class Main {
-    //Prueba de uso de repositorio
     public static void main(String[] args) {
         Doctor myDoctor = new Doctor();
         myDoctor.name = "Alejandro Rodriguez";
