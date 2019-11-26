@@ -5,11 +5,13 @@ public class Doctor {
 
     Doctor(){
         System.out.println("Construyendo el objeto Doctor");
-        id++;
     }
 
-    Doctor(String nombre){
-        System.out.println("El nombre asignado al doctor es " + nombre);
+    Doctor(String name, String speciality){
+        System.out.println("El nombre asignado al doctor es " + name);
+        id++;
+        this.name = name;
+        this.speciality = speciality;
     }
 
     public void showName(){
