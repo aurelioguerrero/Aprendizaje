@@ -1,25 +1,25 @@
 import java.util.ArrayList;
 import java.util.Date;
 
-public class Doctor {
-    static int id = 0;//Autoincrement
-    private String name;
-    private String email;
+public class Doctor extends User{
     private String speciality;
 
-    Doctor(){
-        System.out.println("Construyendo el objeto Doctor");
-    }
-
-    Doctor(String name, String speciality){
+    Doctor(String name, String email){
+        super(name,email);
         System.out.println("El nombre asignado al doctor es " + name);
-        id++;
-        this.name = name;
         this.speciality = speciality;
     }
 
+    public void setSpeciality(String speciality) {
+        this.speciality = speciality;
+    }
+
+    public String getSpeciality() {
+        return speciality;
+    }
+
     public void showName(){
-        System.out.println(name);
+        System.out.println(super.getName());
     }
 
     public void showId(){
